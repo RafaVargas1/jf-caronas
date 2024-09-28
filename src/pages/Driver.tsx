@@ -30,35 +30,35 @@ const pastRides: PastRide[] = [
 const rideRequestData: RideRequestProps[] = [
     {
         "name": "João Silva",
-        "time": "14:30",
+        "time": "15 min",
         "origin": "Bairro São Mateus",
         "destination": "Bairro Alto dos Passos",
         "profilePic": "https://via.placeholder.com/150"
     },
     {
         "name": "Maria Oliveira",
-        "time": "09:15",
+        "time": "09 min",
         "origin": "Bairro Granbery",
         "destination": "Bairro Cascatinha",
         "profilePic": "https://via.placeholder.com/150"
     },
     {
         "name": "Carlos Souza",
-        "time": "18:45",
+        "time": "18 min",
         "origin": "Bairro Santa Luzia",
         "destination": "Bairro Centro",
         "profilePic": "https://via.placeholder.com/150"
     },
     {
         "name": "Fernanda Costa",
-        "time": "07:50",
+        "time": "07 min",
         "origin": "Bairro São Pedro",
         "destination": "Bairro Aeroporto",
         "profilePic": "https://via.placeholder.com/150"
     },
     {
         "name": "Lucas Ferreira",
-        "time": "12:10",
+        "time": "01:50 hora",
         "origin": "Bairro Benfica",
         "destination": "Bairro Manoel Honório",
         "profilePic": "https://via.placeholder.com/150"
@@ -147,11 +147,11 @@ const DriverScreen: React.FC = () => {
             </div>
 
             {newRide && <RideRequest
-                name={rideRequestData[0].name}
-                time={rideRequestData[0].time}
-                origin={rideRequestData[0].origin}
-                destination={rideRequestData[0].destination}
-                profilePic={rideRequestData[0].profilePic}
+                name={rideRequestData[number || 0].name}
+                time={rideRequestData[number || 0].time}
+                origin={rideRequestData[number || 0].origin}
+                destination={rideRequestData[number || 0].destination}
+                profilePic={rideRequestData[number || 0].profilePic}
             />}
         </div>
 

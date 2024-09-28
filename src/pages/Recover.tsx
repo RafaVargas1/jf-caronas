@@ -33,9 +33,9 @@ const Recover: React.FC = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                        className="w-full bg-mainPrimary text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                     >
-                        Login
+                        Enviar
                     </button>
                 </form>
             </div>
